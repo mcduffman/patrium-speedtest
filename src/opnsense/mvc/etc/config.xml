@@ -1,0 +1,15 @@
+<model>
+  <mount>
+    <speedtest>
+      <enabled type="BooleanField">0</enabled>
+      <schedule_enabled type="BooleanField">0</schedule_enabled>
+      <widget_timeframe type="OptionField">
+        <Option name="latest">Latest</Option>
+        <Option name="week">Week</Option>
+        <Option name="month">Month</Option>
+        <Option name="year">Year</Option>
+      </widget_timeframe>
+      <description type="TextField">Speedtest Plugin Configuration</description>
+    </speedtest>
+  </mount>
+</model>

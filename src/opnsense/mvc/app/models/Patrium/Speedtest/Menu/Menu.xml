@@ -1,0 +1,5 @@
+<menu>
+  <Services>
+    <Speedtest url="/ui/patrium/speedtest" order="100" visibility="speedtest"/>
+  </Services>
+</menu>

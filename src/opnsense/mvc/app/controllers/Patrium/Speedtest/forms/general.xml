@@ -1,0 +1,27 @@
+<form>
+  <field>
+    <id>enabled</id>
+    <type>checkbox</type>
+    <label>Enable Speedtest</label>
+    <help>This enables or disables the speedtest plugin</help>
+    <default>0</default>
+  </field>
+  <field>
+    <id>schedule_enabled</id>
+    <type>checkbox</type>
+    <label>Enable Automatic Scheduling</label>
+    <help>Enable to automatically run speed tests on a schedule</help>
+    <default>0</default>
+  </field>
+  <field>
+    <id>widget_timeframe</id>
+    <type>select</type>
+    <label>Widget Timeframe</label>
+    <help>Select which timeframe to display on the dashboard widget</help>
+    <default>latest</default>
+    <option value="latest">Latest</option>
+    <option value="week">Week</option>
+    <option value="month">Month</option>
+    <option value="year">Year</option>
+  </field>
+</form>
