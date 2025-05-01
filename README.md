@@ -1,4 +1,4 @@
-# patrIum-speedtest
+# patrium-speedtest
 
 **Plugin for [OPNsense](https://opnsense.org)** that integrates the Ookla Speedtest CLI and provides:
 - Scheduled speed tests
@@ -22,8 +22,8 @@ Follow the [OPNsense plugin guide](https://docs.opnsense.org/development/example
 ```sh
 # Inside OPNsense build system:
 cd /usr/plugins/net-mgmt
-git clone https://github.com/mcduffman/opnsense-speedtest.git patrIum-speedtest
-cd patrIum-speedtest
+git clone https://github.com/mcduffman/opnsense-speedtest.git patrium-speedtest
+cd patrium-speedtest
 make install
 ```
 
