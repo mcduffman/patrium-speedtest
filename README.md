@@ -12,7 +12,7 @@ Patrium-Speedtest is a plugin for OPNsense that integrates the Ookla Speedtest C
 Clone the plugin source from GitHub into your OPNsense plugin directory:
 ```sh
 cd /tmp/opnsense/plugins/devel
-git clone https://github.com/yourname/Patrium-Speedtest.git patrium-speedtest
+git clone https://github.com/mcduffman/Patrium-Speedtest.git patrium-speedtest
 ```
 
 ## Directory Layout
