@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model version="1.0">
+  <section name="speedtest" translate="label">
+    <tab name="general" translate="tab">
+      <label>Speedtest Settings</label>
+      <group>
+        <label>General</label>
+        <field id="enable_schedule" type="checkbox">
+          <label>Enable scheduled tests</label>
+          <description>Toggle automatic speed tests via cron</description>
+          <default>0</default>
+        </field>
+        <field id="schedule_interval" type="text" width="small">
+          <label>Schedule interval</label>
+          <description>How often to run the test (number)</description>
+          <default>60</default>
+        </field>
+        <field id="schedule_unit" type="select">
+          <label>Interval unit</label>
+          <value>minutes</value>
+          <value>hours</value>
+          <default>minutes</default>
+        </field>
+      </group>
+      <group>
+        <label>Widget</label>
+        <field id="widget_mode" type="select">
+          <label>Widget display mode</label>
+          <description>Select data shown in dashboard widget</description>
+          <value>latest</value>
+          <value>week</value>
+          <value>month</value>
+          <value>year</value>
+          <default>latest</default>
+        </field>
+      </group>
+      <group>
+        <label>Data Retention</label>
+        <field id="retention_days" type="text" width="small">
+          <label>Retention period (days)</label>
+          <description>Remove stored results older than this number of days</description>
+          <default>365</default>
+        </field>
+      </group>
+    </tab>
+  </section>
+</model>
