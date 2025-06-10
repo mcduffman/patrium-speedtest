@@ -9,4 +9,6 @@ if ! command -v speedtest >/dev/null 2>&1; then
 fi
 [ ! -f "$OUTFILE" ] && echo "[]" > "$OUTFILE"
 RESULT=$(speedtest --accept-license --accept-gdpr -f json)
-[ $? -eq 0 ] && echo "$RESULT" | jq -s 'input + .' "$OUTFILE" > "$OUTFILE.tmp" && mv "$OUTFILE.tmp" "$OUTFILE"
+if [ $? -eq 0 ]; then
+  echo "$RESULT" | jq -s '.[0] + [.[1]]' "$OUTFILE" - > "$OUTFILE.tmp" && mv "$OUTFILE.tmp" "$OUTFILE"
+fi

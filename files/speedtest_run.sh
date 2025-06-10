@@ -19,5 +19,5 @@ fi
 # Run speedtest and append to JSON log
 RESULT=$(speedtest --accept-license --accept-gdpr -f json)
 if [ $? -eq 0 ]; then
-  echo "$RESULT" | jq -s 'input + .' "$OUTFILE" > "$OUTFILE.tmp" && mv "$OUTFILE.tmp" "$OUTFILE"
+  echo "$RESULT" | jq -s '.[0] + [.[1]]' "$OUTFILE" - > "$OUTFILE.tmp" && mv "$OUTFILE.tmp" "$OUTFILE"
 fi
